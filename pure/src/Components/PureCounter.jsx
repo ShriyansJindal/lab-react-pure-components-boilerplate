@@ -9,6 +9,7 @@ export default class PureCounter extends PureComponent {
         }
     }
   render() {
+    console.log("This is a pure component")
     let {count,toggle}=this.state
     
     let handleClick =()=>{
@@ -18,7 +19,7 @@ export default class PureCounter extends PureComponent {
     }
     return (
       <div>
-        <h2>Simple counter</h2>
+        <h2>Pure Component</h2>
         <h3>{count}</h3>
         <button onClick={()=>{this.setState({toggle:!toggle})}}>Set Toggle</button>
         <button onClick={handleClick}>Counter</button>

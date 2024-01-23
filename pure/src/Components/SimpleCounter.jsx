@@ -9,6 +9,7 @@ export default class SimpleCounter extends Component {
         }
     }
   render() {
+    console.log("This is a simple component")
     let {count,toggle}=this.state
     
     let handleClick =()=>{
@@ -17,8 +18,9 @@ export default class SimpleCounter extends Component {
         }
     }
     return (
+        
       <div>
-        <h2>Simple counter</h2>
+        <h2>Simple Component</h2>
         <h3>{count}</h3>
         <button onClick={()=>{this.setState({toggle:!toggle})}}>Set Toggle</button>
         <button onClick={handleClick}>Counter</button>
